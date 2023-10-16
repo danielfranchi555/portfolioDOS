@@ -1,18 +1,18 @@
 import './App.css'
 import 'primeflex/primeflex.scss';
-import foto from './images/foto.png'
+import foto from './images/foto-cv-circulo.png'
 import premier from './images/premier.png'
 import ph from './images/photoshop.png'
 import after from './images/after.png'
 import ReactPlayer from 'react-player'
 import videoUno from './videos/1.mp4'
-import videoDos from './videos/1.mp4'
-import videoTres from './videos/1.mp4'
-import videoCuatro from './videos/1.mp4'
-import videoCinco from './videos/1.mp4'
-import {
-  motion,
-} from "framer-motion"
+import videoDos from './videos/2.mp4'
+import videoTres from './videos/3.mp4'
+import videoCuatro from './videos/4.mp4'
+import videoCinco from './videos/5.mp4'
+import { motion} from "framer-motion"
+
+
 function App() {
   
   const containerVariants = {
@@ -55,14 +55,15 @@ function App() {
           </div>
         </nav>
       </header>
-      <div class="container" style={{background:'linear-gradient(#332B47, #000000)'}}>
+      <div class="container" style={{background:'linear-gradient(#332B47, #000000)',border:"solid 2px red"}}>
         <section id="home"
           class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
           <motion.div 
              variants={containerVariantsDos}
              initial="hidden"
              animate="visible"
-          class="left__content col-12 xl:col-6">
+             style={{border:"solid 2px green"}}
+          class="left__content uno col-12 xl:col-6">
             <div class="message__bubble triangle mb-4 md:mb-2">
               <div class="message__text p-2 sm:p-3 text-center">
                 <p>Hola, Yo soy</p>
@@ -82,8 +83,9 @@ function App() {
              variants={containerVariants}
              initial="hidden"
              animate="visible"
-          class="right__content col-9 sm:col-6 xl:col-5">
-            <img src={foto} alt="Foto perfil" width="100" height="100" />
+             style={{border:"solid 5px yellow",display:"flex",justifyContent:"center",alignItems:"center"}}
+          class="right__content ">
+                          <img src={foto} alt="Foto perfil"style={{width:"320px"}} />
           </motion.div>
         </section>
       </div>
@@ -134,7 +136,7 @@ function App() {
             </div>
             <div class="project__card tours__Web" >
 
-              <ReactPlayer url={videoCuatro}
+              <ReactPlayer url={videoDos}
                 width='100%'
                 height='100%'
                 controls
@@ -143,7 +145,7 @@ function App() {
             </div>
             <div class="project__card tours__Web" >
 
-              <ReactPlayer url={videoCinco}
+              <ReactPlayer url={videoUno}
                 width='100%'
                 height='100%'
                 controls
