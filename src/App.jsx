@@ -55,14 +55,14 @@ function App() {
           </div>
         </nav>
       </header>
-      <div class="container" style={{background:'linear-gradient(#332B47, #000000)',border:"solid 2px red"}}>
+      <div class="container" style={{background:'linear-gradient(#332B47, #000000)'}}>
         <section id="home"
           class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
           <motion.div 
              variants={containerVariantsDos}
              initial="hidden"
              animate="visible"
-             style={{border:"solid 2px green"}}
+            
           class="left__content uno col-12 xl:col-6">
             <div class="message__bubble triangle mb-4 md:mb-2">
               <div class="message__text p-2 sm:p-3 text-center">
@@ -83,7 +83,7 @@ function App() {
              variants={containerVariants}
              initial="hidden"
              animate="visible"
-             style={{border:"solid 5px yellow",display:"flex",justifyContent:"center",alignItems:"center"}}
+             style={{display:"flex",justifyContent:"center",alignItems:"center"}}
           class="right__content ">
                           <img src={foto} alt="Foto perfil"style={{width:"320px"}} />
           </motion.div>

@@ -278,7 +278,6 @@ body::-webkit-scrollbar-track {
 
   .container{
     .uno{
-    border: solid 2px orange;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -296,7 +295,6 @@ body::-webkit-scrollbar-track {
   .message__bubble {
       width: 160px;
       text-align: center;
-      border: solid 2px red;
   }
  
   .home__buttons a {
