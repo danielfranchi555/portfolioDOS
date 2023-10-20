@@ -1,6 +1,6 @@
 import './App.css'
 import 'primeflex/primeflex.scss';
-import foto from './images/foto-cv-circulo.png'
+import foto from './images/foto-cv-circulo-min.png'
 import premier from './images/premier.png'
 import ph from './images/photoshop.png'
 import after from './images/after.png'
