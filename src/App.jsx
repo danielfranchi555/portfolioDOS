@@ -56,20 +56,22 @@ function App() {
         </nav>
       </header>
       <div class="container" style={{background:'linear-gradient(#332B47, #000000)'}}>
-        <section id="home"
-          class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
-          <motion.div 
+        <div id="home"
+        style={{display:"flex",justifyContent:"center",alignItems:"center"}}
+          class="home__page ">
+            <div className= "centrarDiv " style={{display:"flex",width:"800px",justifyContent:"center",alignItems:"center",gap:"70px"}}>
+               <motion.div 
              variants={containerVariantsDos}
              initial="hidden"
              animate="visible"
-            
+            style={{height:"100%"}}
           class="left__content uno col-12 xl:col-6">
             <div class="message__bubble triangle mb-4 md:mb-2">
               <div class="message__text p-2 sm:p-3 text-center">
                 <p>Hola, Yo soy</p>
               </div>
             </div>
-            <h1 class="text-3xl sm:text-5xl md:text-7xl">Daniel Franchi</h1>
+            <h1 className='nombre' style={{fontSize:"50px"}}>Daniel Franchi</h1>
             <p class="text-gray-700" style={{fontSize:'20px'}}>
               Video Editor
             </p>
@@ -83,11 +85,16 @@ function App() {
              variants={containerVariants}
              initial="hidden"
              animate="visible"
-             style={{display:"flex",justifyContent:"center",alignItems:"center"}}
-          class="right__content ">
-                          <img src={foto} alt="Foto perfil"style={{width:"320px"}} />
+             style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}
+          class=" ">
+            <div>
+                                        <img  src={foto} alt="Foto perfil" style={{width:"350px",marginTop:"80px"}} />
+
+            </div>
           </motion.div>
-        </section>
+            </div>
+         
+        </div>
       </div>
       <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8" >
         <div class="portfolio__title flex flex-column gap-3 text-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

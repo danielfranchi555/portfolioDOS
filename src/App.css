@@ -283,11 +283,21 @@ body::-webkit-scrollbar-track {
     justify-content: center;
     align-items: center;
   }
+  .centrarDiv{
+    display: flex;
+    flex-direction: column;
+  }
+  
   .right__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .left__content{
+    .nombre{
+      font-size: 20px;
+    }
   }
   }
 
